@@ -14,11 +14,11 @@ pipeline {
                 always {
                     junit 'target/surefire-reports/*.xml'
                     jacoco execPattern: 'target/jacoco.exec'
-                    publishHTML(target: [
-                    reportDir: 'target/site/jacoco',
-                    reportFiles: 'index.html',
-                    reportName: 'JaCoCo Coverage Report'
-                    ])
+                    // publishHTML(target: [
+                    // reportDir: 'target/site/jacoco',
+                    // reportFiles: 'index.html',
+                    // reportName: 'JaCoCo Coverage Report'
+                    // ])
                 }
             }
         }
